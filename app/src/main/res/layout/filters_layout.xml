@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgOriginal"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/original" />
+
+                <ImageView
+                    android:id="@+id/imgAqua"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/aqua" />
+
+                <ImageView
+                    android:id="@+id/imgBlackBoard"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/blackboard" />
+
+                <ImageView
+                    android:id="@+id/imgWhiteBoard"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/whiteboard" />
+
+                <ImageView
+                    android:id="@+id/imgSepia"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/sepia" />
+
+                <ImageView
+                    android:id="@+id/imgNegative"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/negative" />
+
+                <ImageView
+                    android:id="@+id/imgMono"
+                    android:layout_width="60dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/mono" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>
